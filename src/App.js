@@ -12,10 +12,10 @@ class App extends React.Component {
       lastName: "",
       eMail: "",
       phone: "",
-      university: "123",
-      major: "123",
-      year: "123",
-      gpa: "123",
+      university: "",
+      major: "",
+      year: "",
+      gpa: "",
       company: "",
       startingDate: "",
       position: "",
@@ -23,9 +23,8 @@ class App extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(event) {
-    const { name, type } = event.target;
+    const { name } = event.target;
     this.setState({ [name]: event.target.value });
-    console.log(this.state);
   }
   render() {
     return (
@@ -50,7 +49,19 @@ class App extends React.Component {
           position={this.state.position}
           handleChange={this.handleChange}
         />
-        <Presentation />
+        <Presentation
+          name={this.state.name}
+          lastName={this.state.lastName}
+          eMail={this.state.eMail}
+          phone={this.state.phone}
+          university={this.state.university}
+          major={this.state.major}
+          year={this.state.year}
+          gpa={this.state.gpa}
+          company={this.state.company}
+          startingDate={this.state.startingDate}
+          position={this.state.position}
+        />
       </div>
     );
   }
