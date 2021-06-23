@@ -1,23 +1,7 @@
 import React from "react";
 
 class PracticalExperience extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      company: "",
-      startingDate: "",
-      position: "",
-    };
-    this.handleChange = this.handleChange.bind(this);
-  }
-  handleChange(event) {
-    const { name, type } = event.target;
-    this.setState({
-      [name]: event.target.value,
-    });
-    console.log(this.state);
-  }
-  render() {
+  render(props) {
     return (
       <div className="container">
         <h1>Practical Experience</h1>
@@ -26,24 +10,24 @@ class PracticalExperience extends React.Component {
             type="text"
             name="company"
             placeholder="Company"
-            onChange={this.handleChange}
-            value={this.state.company}
+            onChange={this.props.handleChange}
+            value={this.props.company}
           />
           <br />
           <input
             type="text"
             name="startingDate"
             placeholder="Starting Date"
-            onChange={this.handleChange}
-            value={this.state.startingDate}
+            onChange={this.props.handleChange}
+            value={this.props.startingDate}
           />
           <br />
           <input
             type="text"
             name="position"
             placeholder="Position"
-            onChange={this.handleChange}
-            value={this.state.position}
+            onChange={this.props.handleChange}
+            value={this.props.position}
           />
           <br />
           <input type="submit" value="Submit" />

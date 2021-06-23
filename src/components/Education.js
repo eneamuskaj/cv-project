@@ -1,23 +1,7 @@
-import React from 'react'
+import React from "react";
 
 class Education extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      university: '',
-      major: '',
-      year: '',
-      gpa: '',
-    }
-    this.handleChange = this.handleChange.bind(this)
-  }
-
-  handleChange(event) {
-    const { name, type } = event.target
-    this.setState({ [name]: event.target.value })
-    console.log(this.state)
-  }
-  render() {
+  render(props) {
     return (
       <div className="container">
         <h1>Education</h1>
@@ -26,38 +10,38 @@ class Education extends React.Component {
             type="text"
             name="university"
             placeholder="University"
-            value={this.state.university}
-            onChange={this.handleChange}
+            value={this.props.university}
+            onChange={this.props.handleChange}
           />
           <br />
           <input
             type="text"
             name="major"
             placeholder="Major"
-            value={this.state.major}
-            onChange={this.handleChange}
+            value={this.props.major}
+            onChange={this.props.handleChange}
           />
           <br />
           <input
             type="text"
             name="year"
             placeholder="Year"
-            value={this.state.year}
-            onChange={this.handleChange}
+            value={this.props.year}
+            onChange={this.props.handleChange}
           />
           <br />
           <input
             type="text"
             name="gpa"
             placeholder="GPA"
-            value={this.state.gpa}
-            onChange={this.handleChange}
+            value={this.props.gpa}
+            onChange={this.props.handleChange}
           />
           <input type="submit" value="Submit" />
         </form>
       </div>
-    )
+    );
   }
 }
 
-export default Education
+export default Education;
