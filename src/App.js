@@ -28,40 +28,44 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
-        <GeneralInfo
-          name={this.state.name}
-          lastName={this.state.lastName}
-          eMail={this.state.eMail}
-          phone={this.state.phone}
-          handleChange={this.handleChange}
-        />
-        <Education
-          university={this.state.university}
-          major={this.state.major}
-          year={this.state.year}
-          gpa={this.state.gpa}
-          handleChange={this.handleChange}
-        />
-        <PracticalExperience
-          company={this.state.company}
-          startingDate={this.state.startingDate}
-          position={this.state.position}
-          handleChange={this.handleChange}
-        />
-        <Presentation
-          name={this.state.name}
-          lastName={this.state.lastName}
-          eMail={this.state.eMail}
-          phone={this.state.phone}
-          university={this.state.university}
-          major={this.state.major}
-          year={this.state.year}
-          gpa={this.state.gpa}
-          company={this.state.company}
-          startingDate={this.state.startingDate}
-          position={this.state.position}
-        />
+      <div className="mainDisplay">
+        <div className="inputDisplay">
+          <GeneralInfo
+            name={this.state.name}
+            lastName={this.state.lastName}
+            eMail={this.state.eMail}
+            phone={this.state.phone}
+            handleChange={this.handleChange}
+          />
+          <Education
+            university={this.state.university}
+            major={this.state.major}
+            year={this.state.year}
+            gpa={this.state.gpa}
+            handleChange={this.handleChange}
+          />
+          <PracticalExperience
+            company={this.state.company}
+            startingDate={this.state.startingDate}
+            position={this.state.position}
+            handleChange={this.handleChange}
+          />
+        </div>
+        <div className="viewDisplay">
+          <Presentation
+            name={this.state.name}
+            lastName={this.state.lastName}
+            eMail={this.state.eMail}
+            phone={this.state.phone}
+            university={this.state.university}
+            major={this.state.major}
+            year={this.state.year}
+            gpa={this.state.gpa}
+            company={this.state.company}
+            startingDate={this.state.startingDate}
+            position={this.state.position}
+          />
+        </div>
       </div>
     );
   }

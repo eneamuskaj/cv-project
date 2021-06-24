@@ -37,7 +37,6 @@ class Education extends React.Component {
             value={this.props.gpa}
             onChange={this.props.handleChange}
           />
-          <input type="submit" value="Submit" />
         </form>
       </div>
     );

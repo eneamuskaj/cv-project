@@ -1,9 +1,27 @@
-.container {
-  width: 500px;
-  clear: both;
+@media (max-width: 768px) {
+  .mainDisplay {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.inputDisplay {
+  flex: 1;
+  flex-basis: 50%;
+  align-items: center;
 }
 
-.container input {
-  width: 100%;
-  clear: both;
+.viewDisplay {
+  flex: 2;
+  flex-basis: 50%;
+  align-items: center;
+}
+
+.mainDisplay {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+.container {
+  text-align: center;
 }

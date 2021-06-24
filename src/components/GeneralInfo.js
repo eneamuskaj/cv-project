@@ -37,7 +37,6 @@ class GeneralInfo extends React.Component {
             onChange={this.props.handleChange}
             value={this.props.phone}
           />
-          <input type="submit" value="Submit" />
         </form>
       </div>
     );

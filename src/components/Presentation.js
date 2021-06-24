@@ -4,17 +4,18 @@ class Presentation extends React.Component {
   render(props) {
     return (
       <div>
-        <h1>{this.props.name}</h1>
-        <h1>{this.props.lastName}</h1>
-        <h3>{this.props.eMail}</h3>
-        <h3>{this.props.phone}</h3>
-        <h2>{this.props.university}</h2>
-        <h3>{this.props.major}</h3>
-        <h2>{this.props.year}</h2>
-        <h3>{this.props.gpa}</h3>
-        <h3>{this.props.company}</h3>
-        <h4>{this.props.startingDate}</h4>
-        <p>{this.props.position}</p>
+        <h1>
+          {this.props.name} {this.props.lastName}
+        </h1>
+        <p>E-mail: {this.props.eMail}</p>
+        <p>Phone: {this.props.phone}</p>
+        <h3>University: {this.props.university}</h3>
+        <p>Major: {this.props.major}</p>
+        <p>Year of Graduation: {this.props.year}</p>
+        <p>GPA: {this.props.gpa}</p>
+        <h3>Current employer: {this.props.company}</h3>
+        <h4>Starting date: {this.props.startingDate}</h4>
+        <p>Position: {this.props.position}</p>
       </div>
     );
   }

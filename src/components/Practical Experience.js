@@ -30,7 +30,6 @@ class PracticalExperience extends React.Component {
             value={this.props.position}
           />
           <br />
-          <input type="submit" value="Submit" />
         </form>
       </div>
     );
