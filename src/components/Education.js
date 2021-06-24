@@ -4,7 +4,7 @@ class Education extends React.Component {
   render(props) {
     return (
       <div className="container">
-        <h1>Education</h1>
+        <h3>Education</h3>
         <form>
           <input
             type="text"

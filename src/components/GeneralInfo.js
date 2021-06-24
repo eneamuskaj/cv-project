@@ -4,7 +4,7 @@ class GeneralInfo extends React.Component {
   render(props) {
     return (
       <div className="container">
-        <h1>General Info</h1>
+        <h3>General Info</h3>
         <form>
           <input
             type="text"

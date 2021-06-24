@@ -4,7 +4,7 @@ class PracticalExperience extends React.Component {
   render(props) {
     return (
       <div className="container">
-        <h1>Practical Experience</h1>
+        <h3>Practical Experience</h3>
         <form>
           <input
             type="text"

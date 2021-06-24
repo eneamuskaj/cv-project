@@ -4,6 +4,9 @@
     flex-direction: column;
   }
 }
+body {
+  background-color: #fff2f5;
+}
 .inputDisplay {
   flex: 1;
   flex-basis: 50%;
@@ -14,6 +17,9 @@
   flex: 2;
   flex-basis: 50%;
   align-items: center;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
 }
 
 .mainDisplay {
@@ -32,4 +38,34 @@ h3,
 h4,
 p {
   font-family: "Quattrocento Sans", sans-serif;
+  color: #9d6381;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #c7b7ba;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+textarea {
+  background-color: #8b5772;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+input:focus {
+  background-color: #bb769a;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #8b5772 inset;
+  -webkit-text-fill-color: rgb(243, 243, 243);
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #8b5772 inset;
+  -webkit-text-fill-color: rgb(255, 255, 255);
 }
