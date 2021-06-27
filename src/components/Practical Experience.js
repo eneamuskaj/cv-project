@@ -1,39 +1,37 @@
-import React from "react";
+import React from 'react'
 
-class PracticalExperience extends React.Component {
-  render(props) {
-    return (
-      <div className="container">
-        <h3>Practical Experience</h3>
-        <form>
-          <input
-            type="text"
-            name="company"
-            placeholder="Company"
-            onChange={this.props.handleChange}
-            value={this.props.company}
-          />
-          <br />
-          <input
-            type="text"
-            name="startingDate"
-            placeholder="Starting Date"
-            onChange={this.props.handleChange}
-            value={this.props.startingDate}
-          />
-          <br />
-          <input
-            type="text"
-            name="position"
-            placeholder="Position"
-            onChange={this.props.handleChange}
-            value={this.props.position}
-          />
-          <br />
-        </form>
-      </div>
-    );
-  }
+const PracticalExperience = (props) => {
+  return (
+    <div className="container">
+      <h3>Practical Experience</h3>
+      <form>
+        <input
+          type="text"
+          name="company"
+          placeholder="Company"
+          onChange={props.handleChange}
+          value={props.company}
+        />
+        <br />
+        <input
+          type="text"
+          name="startingDate"
+          placeholder="Starting Date"
+          onChange={props.handleChange}
+          value={props.startingDate}
+        />
+        <br />
+        <input
+          type="text"
+          name="position"
+          placeholder="Position"
+          onChange={props.handleChange}
+          value={props.position}
+        />
+        <br />
+      </form>
+    </div>
+  )
 }
 
-export default PracticalExperience;
+export default PracticalExperience

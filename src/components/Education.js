@@ -1,46 +1,44 @@
-import React from "react";
+import React from 'react'
 
-class Education extends React.Component {
-  render(props) {
-    return (
-      <div className="container">
-        <h3>Education</h3>
-        <form>
-          <input
-            type="text"
-            name="university"
-            placeholder="University"
-            value={this.props.university}
-            onChange={this.props.handleChange}
-          />
-          <br />
-          <input
-            type="text"
-            name="major"
-            placeholder="Major"
-            value={this.props.major}
-            onChange={this.props.handleChange}
-          />
-          <br />
-          <input
-            type="text"
-            name="year"
-            placeholder="Year"
-            value={this.props.year}
-            onChange={this.props.handleChange}
-          />
-          <br />
-          <input
-            type="text"
-            name="gpa"
-            placeholder="GPA"
-            value={this.props.gpa}
-            onChange={this.props.handleChange}
-          />
-        </form>
-      </div>
-    );
-  }
+const Education = (props) => {
+  return (
+    <div className="container">
+      <h3>Education</h3>
+      <form>
+        <input
+          type="text"
+          name="university"
+          placeholder="University"
+          value={props.university}
+          onChange={props.handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          name="major"
+          placeholder="Major"
+          value={props.major}
+          onChange={props.handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          name="year"
+          placeholder="Year"
+          value={props.year}
+          onChange={props.handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          name="gpa"
+          placeholder="GPA"
+          value={props.gpa}
+          onChange={props.handleChange}
+        />
+      </form>
+    </div>
+  )
 }
 
-export default Education;
+export default Education
